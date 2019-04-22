@@ -1,0 +1,10 @@
+.img-text a{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+.img-text img{
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+}

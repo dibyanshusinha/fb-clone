@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9ebee;
+  font-family: Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  background: #3b5998;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  top: 0;
+}
+
+main{
+  padding: 50px 15px 0 18px;
+  display: flex;
+  height: 100vh;
+}
+
+.scroll-y{
+  overflow-y: scroll;
+}
+
+/*Remove the scrollbar from Chrome, Safari, Edge and IE*/
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+* {
+-ms-overflow-style: none !important;
+}
+.container{
+  width: 100%;
+  padding: 20px;
+}
+.inline{
+  display: inline-flex;
+}
+
+.all-grow> a,
+.all-grow> div{    
+  flex-grow: 1;
+}
+img.responsive{
+  max-width: 100%;
+  height: auto;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clearfix{
+  clear: both;
+}
+
+.height-full{
+  height: 100%;
+}
+
+.width-full{
+  width: 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.circle{
+  border-radius: 100%;
+}
+.no-margin{
+  margin: 0;
+}
+
+.align-center{
+  align-items:center;
+}
+
+.push-right{
+  justify-content: right;
+}
+.space-between{
+  justify-content: space-between;
+}
+
+.fa-smile{
+  color: #ffd972;
+}
+
+.fa-thumbs-up{
+  color: #365899;
+}
+
+/* Small screens */
+@media screen and (max-width: 990px) {
+  .large-only{
+    display: none;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 990px) {
+  .small-only{
+    display: none;
+  }
+  .large-only{
+    display: block;
+  }
+  .large-only.inline{
+    display: flex;
+  }
+  .container{
+    width: 90%;
+    max-width: 1200px;
+  }
+}
+

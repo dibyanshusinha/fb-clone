@@ -1,0 +1,47 @@
+.sidebar{
+    width: 20%;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar .bold{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sidebar .grpTitle{
+    margin-top: 20px;
+}
+
+.sidebar .grpTitle .img-text a{
+    color: #1a2947;
+    font-size: 13px;
+    padding: 7px 0;
+}
+.sidebar .grpTitle .img-text img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+.sidebar.storyboard{
+    background-color: white;
+    padding: 0 10px;
+
+}
+
+
+
+
+
+
+
+
+/* Small screens */
+@media screen and (max-width: 990px) {
+    .sidebar{
+      display: none;
+    }
+  }
