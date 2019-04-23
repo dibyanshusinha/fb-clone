@@ -1,3 +1,42 @@
+# Facebook Clone and infinite scroll using REACT -- Front-End Coding Exercise
+
+### Replicate the Facebook home page layout. 
+
+## Page Structure
+
+Like Facebook, the page should consist of a header, 2 sidebars, and an infinite content column:
+
+1. Header: Should be fixed at the top and contain logo/text and navigation menu at opposite ends.
+2. Sidebars: Should contain well formatted sample links.
+3. Content: Should have infinitely scrollable content (posts). 
+
+## Page Behavior
+
+On mobile devices, only the Content column should be visible below the Header. The Sidebar content should be transformed into a menu, which should appear in the Header. The Content column should be full width.
+
+On non-mobile devices, the Sidebars should each occupy 30% of the width, and the Content column should occupy 40% of the width.
+
+Follow the same dimensions for width and height which are used by Facebook.
+
+## Guidelines
+
+Use Bootstrap and AngularJS or ReactJS to complete the exercise (briefly explain your reason for choosing one over the other). Follow HTML5 conventions.
+
+This exercise should take a maximum of 2 to 3 hours to complete.
+
+
+# Solution
+
+Please check the website at https://dibyanshusinha.github.io/fb-clone
+
+Facebook doesn't just follow the RWD design, it follows RWD + AWD Approach.
+
+However I have replicated the effect using just plain CSS3.  
+Time taken to build was around 4 hours. 
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -27,37 +66,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
 ### Deployment
 
