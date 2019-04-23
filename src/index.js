@@ -13,7 +13,7 @@ const store = createStore(reducer);
 
 const app = (
     <Provider store={store}>
-        <BrowserRouter basename="/fb-home">
+        <BrowserRouter basename="/fb-clone">
             <App />
         </BrowserRouter>
     </Provider>
