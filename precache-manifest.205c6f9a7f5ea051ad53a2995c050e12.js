@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/fb-clone/static/js/runtime~main.22b09571.js"
   },
   {
-    "revision": "5bd96ebeeee345e57699",
-    "url": "/fb-clone/static/js/main.97848d16.chunk.js"
+    "revision": "e8eafdf204da9c63f045",
+    "url": "/fb-clone/static/js/main.8268d6d9.chunk.js"
   },
   {
     "revision": "60e3d146f7a17732c42c",
     "url": "/fb-clone/static/js/2.374bef66.chunk.js"
   },
   {
-    "revision": "5bd96ebeeee345e57699",
+    "revision": "e8eafdf204da9c63f045",
     "url": "/fb-clone/static/css/main.4ce5dfc0.chunk.css"
   },
   {
-    "revision": "7173edfafc850d334c507911563a7d8a",
+    "revision": "3894948440593c71a30823433e1892a2",
     "url": "/fb-clone/index.html"
   }
 ];
