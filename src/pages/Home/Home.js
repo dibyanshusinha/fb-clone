@@ -11,11 +11,31 @@ class Home extends React.Component {
         posts: null
     }
 
-    handleScroll() {
-        console.log("Call Foo");
-        if (window.innerHeight + document.documentElement.scrollTo === document.documentElement.offsetHeight) {
+    handleScroll = e => {
+        let element = e.target
+        if (element.scrollHeight - element.scrollTop === element.clientHeight) {
             console.log("Get New Data");
-        };
+            const data = {
+                by: "Dibyanshu1",
+                posterImg: "https://placeimg.com/40/40/tech",
+                title: "Lorem Ipsum Motto",
+                img: "https://placeimg.com/800/600/any/tech",
+                posttype: "image",
+                t: "1555850147",
+                actions: "One Kumar Pandey, Saroj Singh and 37 others",
+                comments: [{
+                    by: "Someone",
+                    t: "1555750147",
+                    msg: "Of course you need the fetched data in your local state",
+                    img: "https://placeimg.com/20/20/any?random=258"
+                }]
+            };
+
+            this.setState((prevState) => {
+                return { posts: [...prevState.posts, data] }
+            });
+
+        }
     };
 
     componentDidMount() {
@@ -133,14 +153,8 @@ class Home extends React.Component {
         this.setState((prevState) => {
             return { storybar }
         });
-
-        window.addEventListener('scroll', this.handleScroll());
-
     }
 
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
 
     render() {
 
@@ -148,8 +162,8 @@ class Home extends React.Component {
             <Fragment>
                 <Sidebars data={this.state.sidebar1} position={"left"}>
                 </Sidebars>
-                <section className="posts-container height-full scroll-y" >
-                    <Posts data={this.state.posts} />
+                <section className="posts-container height-full scroll-y" onScroll={this.handleScroll} >
+                    <Posts data={this.state.posts} on />
                 </section>
                 <Sidebars data={this.state.storybar} position={"right"}></Sidebars>
             </Fragment>
