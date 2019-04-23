@@ -2,7 +2,7 @@
   "name": "fbhome-clone",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dibyanshusinha.github.io/fb-clone",
+  "homepage": "https://dibyanshusinha.github.io/fb-clone/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "moment": "^2.24.0",
